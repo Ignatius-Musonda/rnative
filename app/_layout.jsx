@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import {  Text, View } from 'react-native';
+import { Stack } from 'expo-router';
 
 export default function RootLayout() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!!3</Text>
-      <StatusBar style="auto" />
-    </View>
+
+     <Stack>
+        <Stack.Screen
+
+               name='index'
+               options={{headerShown :false}}
+        />
+     </Stack>
+    
   );
 }
 
@@ -18,3 +24,8 @@ export default function RootLayout() {
 //     justifyContent: 'center',
 //   },
 // });
+
+{/* <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!!3</Text>
+      <StatusBar style="auto" />
+    </View> */}
