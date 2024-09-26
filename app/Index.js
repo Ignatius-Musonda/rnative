@@ -9,7 +9,7 @@ const RIndex = () => {
       <View  className='flex-1 items-center justify-center bg-blue'>
         <Text className="text-4xl font-pblack">Aora</Text>
         <StatusBar style='auto' />
-        <Link href={'/Profile'} style={{color: 'blue'}}>Go to profile</Link>
+        <Link href={'/Profile'} style={{color: 'blue'}}>Go to Home</Link>
       </View>
 
   )
