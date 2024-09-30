@@ -18,7 +18,7 @@ const TabsLayout = () => {
           className="w-6 h-6"
         />
         <Text
-          className={`${focused ? "font-psemibold" : "font-pregular"} text-xs`}
+          className={`${focused ? "font-psemibold text-yellow" : "font-pregular"} text-xs`}
           style={{ color: color }}
         >
           {name}

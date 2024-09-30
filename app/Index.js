@@ -1,10 +1,11 @@
 import {  Image, ScrollView, Text, View } from 'react-native'
 import { StatusBar } from 'expo-status-bar'
 import React from 'react'
-import { Link } from 'expo-router'
+import { Link, router } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../constants'
-import CustomButton from '../Components/CustomButton'
+import CustomButton from './Components/CustomButton'
+
 
 const RIndex = () => {
   return (
@@ -43,10 +44,11 @@ const RIndex = () => {
             Where Creativity Meets Innovation: Embark on a Journey of Limitless
             Exploration with Aora
           </Text>
+                  {/* <Link href={'/Profile'} style={{color: 'blue'}}>Go to Home</Link> */}
 
           <CustomButton
             title="Continue with Email"
-            handlePress={() => router.push("/sign-in")}
+            handlePress={() => router.push("/Profile")}
             containerStyles="w-full mt-7"
           />
         </View>
