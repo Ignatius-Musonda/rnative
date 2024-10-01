@@ -48,7 +48,7 @@ const RIndex = () => {
 
           <CustomButton
             title="Continue with Email"
-            handlePress={() => router.push("/Profile")}
+            handlePress={() => router.push("/Signin")}
             containerStyles="w-full mt-7"
           />
         </View>
