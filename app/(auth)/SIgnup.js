@@ -1,7 +1,7 @@
 
 
 import { useState } from "react";
-import { Link } from "expo-router"; // Use expo-router for navigation
+import { Link,router } from "expo-router"; // Use expo-router for navigation
 import { SafeAreaView } from "react-native-safe-area-context";
 import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 import axios from "axios"; // Make sure axios is installed
@@ -53,6 +53,8 @@ const SignUp = () => {
       console.log("response",response)
 
       if (response?.data?.status === "Ok") {
+
+        console.log("In okay")
         const user = response?.data?.email;
         const accessToken = response?.data?.accessToken;
         const roles = response?.data?.roles;
